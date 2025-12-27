@@ -24,8 +24,8 @@ except Exception:
 TRAIN_PATH = "train.csv"
 TEST_PATH  = "test.csv"
 
-train_df = pd.read_csv(r"C:\Users\helpi\OneDrive\Desktop\DEEP LEARNING PROJECT DATASETS\train.csv")
-test_df  = pd.read_csv(r"C:\Users\helpi\OneDrive\Desktop\DEEP LEARNING PROJECT DATASETS\test.csv")
+train_df = pd.read_csv(TRAIN_PATH)
+test_df  = pd.read_csv(TEST_PATH)
 
 
 if "label" not in train_df.columns:
@@ -186,3 +186,4 @@ submission.to_csv("submission.csv", index=False)
 
 print("\nSaved submission.csv with shape:", submission.shape)
 print(submission.head())
+
